@@ -23,8 +23,9 @@ public class serverUDP {
             m = m.trim();
             System.out.println(m);
             
-            Sapxep sapxep = new Sapxep(m);
-        	String n = sapxep.xep(m);
+            SoNT nt = new SoNT();
+        	String n = nt.NT(m);
+        	System.out.println(n);
             //Lấy địa chỉ IP của bên gửi
             InetAddress IPAddress = receivePacket.getAddress();
             //Lấy số hiệu cổng bên gửi
